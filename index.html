@@ -1,75 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdelrahman Ahmed</title>
+    <meta name="description" content="Abdelrahman Ahmed Hassan Atia - DevOps Engineer & Software Developer Portfolio">
+    <title>Abdelrahman Atia | DevOps Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Abdelrahman Ahmed</h1>
-        <h2>Computer Science Student / Junior Developer</h2>
-    </header>
-    <nav>
-        <ul>
-            <li> <a href="#about-me"> About Me </a> </li>
-            <li> <a href="#skills"> Skills </a> </li>
-            <li> <a href="#projects"> Projects </a> </li>
-            <li> <a href="#contact"> Contact </a> </li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about-me">
-            <p> I am a passionate computer science student <br>with a strong foundation in programming and software development. I enjoy working<br> on projects that challenge my skills and allow me to learn new technologies.   </p>
-            <img src="res/profile_picture.jpg" alt="Profile Picture" width="200" height="200">
-        </section>
-        <section id="skills">
-            <ul>
-                <li> Programming Languages: Python, Java, C++ </li>
-                <li> Web Development: HTML, CSS, JavaScript </li>
-                <li> Database Management: MySQL, MongoDB </li>
-                <li> Version Control: Git, GitHub </li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Abdelrahman Atia</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </section>
-        <section id="projects">
-            <table>
-                    <tr>
-                        <th> Project Name </th>
-                        <th> Description </th>
-                        <th> Status </th>
-                    </tr>
-                    <tr>
-                        <td> Portfolio Website </td>
-                        <td> A personal portfolio website to showcase my projects and skills. </td>
-                        <td> In Progress </td>
-                    </tr>
-                    <tr>
-                        <td> Task Manager App </td>
-                        <td> A web application to manage daily tasks and to-dos. </td>
-                        <td> In Progress </td>
-                    </tr>
-                    <tr>
-                        <td> Task Manager App </td>
-                        <td> A web application to manage daily tasks and to-dos. </td>
-                        <td> In Progress </td>
-                    </tr>
-            </table>
-        </section>
-        <section id="contact">
-            <form action="#" method="post">
-                    <label for="name"> Name: </label>
-                    <input type ="text" id="name" name="name" required> <br><br>
-                    <label for="email"> Email: </label>
-                    <input type ="email" id="email" name="email" required> <br><br>
-                    <label for="message"> Message: </label>
-                    <textarea id="message" name="message" rows="4" required></textarea> <br><br>
-                    <input type="submit" value="Send">
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p> &copy; 2025 Junio Developer. All rights reserved. </p>
-        <a href="https://github.com/Abdelrahman730"> GitHub Profile </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Abdelrahman</span></h1>
+                <h2 class="hero-subtitle">DevOps Engineer & Software Developer</h2>
+                <p class="hero-description">
+                    Results-driven Computer Science graduate with expertise in DevOps, software engineering, and machine
+                    learning.
+                    Passionate about automation, infrastructure optimization, and building scalable production systems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="res/Abdelrahman_Ahmed_Resume.pdf" download class="btn btn-accent">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="res/profile_picture.jpg" alt="Abdelrahman Atia" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I'm a Computer Science graduate from Nile University with a strong foundation in DevOps
+                        practices,
+                        software engineering, and machine learning. Currently working as a Teaching Assistant at the
+                        German
+                        University in Cairo, where I support programming and software engineering courses.
+                    </p>
+                    <p class="about-paragraph">
+                        My expertise spans containerization, CI/CD pipelines, cloud orchestration, and full-stack
+                        development.
+                        I'm passionate about creating efficient, scalable solutions and continuously learning new
+                        technologies.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Giza, Egypt</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Education:</span>
+                            <span class="info-value">B.Sc. IT & Computer Science</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">GPA:</span>
+                            <span class="info-value">3.66/4.0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Military Status:</span>
+                            <span class="info-value">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="skill-name">DevOps</h3>
+                    <ul class="skill-list">
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Jenkins</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Git</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-name">Programming</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Bash</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="skill-name">Web Development</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>React.js</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-name">Machine Learning</h3>
+                    <ul class="skill-list">
+                        <li>Deep Learning</li>
+                        <li>TensorFlow Lite</li>
+                        <li>Computer Vision</li>
+                        <li>OpenCV</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name">Database</h3>
+                    <ul class="skill-list">
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="skill-name">Tools</h3>
+                    <ul class="skill-list">
+                        <li>Android Studio</li>
+                        <li>ImGUI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-text">
+                                <span class="timeline-date">Oct 2025 – Present</span>
+                                <h3 class="timeline-title">Teaching Assistant</h3>
+                                <h4 class="timeline-company">German University in Cairo (GUC)</h4>
+                                <p class="timeline-location">Cairo, Egypt</p>
+                                <ul class="timeline-description">
+                                    <li>Supporting programming and software engineering courses for undergraduate
+                                        students</li>
+                                    <li>Conducting lab sessions and assisting with debugging and code reviews</li>
+                                </ul>
+                            </div>
+                            <img src="res/GUCLogo.png" alt="GUC Logo" class="timeline-logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-text">
+                                <span class="timeline-date">Oct 2020 – Feb 2021</span>
+                                <h3 class="timeline-title">Junior Teaching Assistant</h3>
+                                <h4 class="timeline-company">Nile University</h4>
+                                <p class="timeline-location">Giza, Egypt</p>
+                                <ul class="timeline-description">
+                                    <li>Supported programming courses and mentored students on software development
+                                        projects
+                                    </li>
+                                    <li>Assisted with debugging, code reviews, and technical queries during lab sessions
+                                    </li>
+                                </ul>
+                            </div>
+                            <img src="res/Nile_University_logo.png" alt="Nile University Logo" class="timeline-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">DevOps Web Deployment Pipeline</h3>
+                        <span class="project-date">November 2025</span>
+                    </div>
+                    <p class="project-type">Practice Project</p>
+                    <p class="project-description">
+                        Containerized a simple web application using Docker and deployed it on Kubernetes cluster.
+                        Implemented CI/CD pipeline with Jenkins for automated testing and deployment.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3 class="project-title">ASSIST ME</h3>
+                        <span class="project-date">June 2023</span>
+                    </div>
+                    <p class="project-type">Graduation Project – Computer Vision & Deep Learning</p>
+                    <p class="project-description">
+                        Mobile application for visually impaired individuals with reading and navigation modules using
+                        OCR
+                        and YOLOv8 object detection. Achieved 95% text recognition accuracy with TensorFlow Lite models.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">TensorFlow Lite</span>
+                        <span class="tag">YOLOv8</span>
+                        <span class="tag">OCR</span>
+                        <span class="tag">Computer Vision</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Regex-to-Finite-Automaton Converter</h3>
+                        <span class="project-date">June 2022</span>
+                    </div>
+                    <p class="project-type">C++ Application with ImGUI</p>
+                    <p class="project-description">
+                        Developed a tool to convert regular expressions to finite automata with interactive
+                        visualizations
+                        and state transition animations.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">ImGUI</span>
+                        <span class="tag">Algorithms</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Restaurant Management System</h3>
+                        <span class="project-date">June 2022</span>
+                    </div>
+                    <p class="project-type">Full-Stack Web App</p>
+                    <p class="project-description">
+                        Built order and inventory management system with analytical dashboards and role-based access
+                        control.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React.js</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Automated University Management System</h3>
+                        <span class="project-date">January 2022</span>
+                    </div>
+                    <p class="project-type">Web Application</p>
+                    <p class="project-description">
+                        Created full-featured academic portal for students, faculty, and admins with role-based
+                        authentication.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Professional Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h3 class="cert-provider">KodeKloud</h3>
+                    <ul class="cert-list">
+                        <li>Docker for Beginners</li>
+                        <li>Kubernetes for Beginners</li>
+                        <li>Jenkins for Beginners</li>
+                    </ul>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-provider">IBM</h3>
+                    <ul class="cert-list">
+                        <li>Data Science Specialization <span class="cert-date">(Nov 2022)</span></li>
+                        <li>Data Analysis Specialization <span class="cert-date">(Oct 2022)</span></li>
+                    </ul>
+                </div>
+
+                <div class="cert-card">
+                    <h3 class="cert-provider">Meta</h3>
+                    <ul class="cert-list">
+                        <li>Version Control <span class="cert-date">(Sept 2022)</span></li>
+                        <li>iOS Development <span class="cert-date">(Sept 2022)</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="languages">
+                <h3 class="languages-title">Languages</h3>
+                <div class="languages-list">
+                    <div class="language-item">
+                        <span class="language-name">Arabic</span>
+                        <span class="language-level">Native</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">English</span>
+                        <span class="language-level">Professional Working Proficiency</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info-section">
+                    <p class="contact-description">
+                        I'm always open to discussing new opportunities, collaborations, or just having a chat about
+                        technology.
+                        Feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:abd.ahmed.hass@gmail.com">abd.ahmed.hass@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+201145771230">+20 01145771230</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>6 October, Giza, Egypt</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/Abdelrahman730"
+                                    target="_blank">github.com/Abdelrahman730</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/abdelrahman-ahmed-b9591a241/"
+                                    target="_blank">linkedin.com/in/abdelrahman-ahmed</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Abdelrahman Ahmed Hassan Atia. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Abdelrahman730" target="_blank" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/abdelrahman-ahmed-b9591a241/" target="_blank"
+                    class="social-link">LinkedIn</a>
+                <a href="mailto:abd.ahmed.hass@gmail.com" class="social-link">Email</a>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
