@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abdelrahman Ahmed Hassan Atia - DevOps Engineer & Software Developer Portfolio">
-    <title>Abdelrahman Atia | DevOps Engineer</title>
+    <meta name="description" content="Abdelrahman Ahmed Hassan Atia - Backend Engineer Portfolio">
+    <title>Abdelrahman Atia | Backend Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -23,6 +23,11 @@
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item theme-switch-item">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -34,18 +39,23 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="parallax-blob blob-1"></div>
+        <div class="parallax-blob blob-2"></div>
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Abdelrahman</span></h1>
-                <h2 class="hero-subtitle">DevOps Engineer & Software Developer</h2>
+                <h1 class="hero-title"><span id="greeting">Hi</span>, I'm <span class="highlight">Abdelrahman</span>
+                </h1>
+                <h2 class="hero-subtitle">I'm a <span id="typewriter" class="type-text"></span><span
+                        class="cursor">|</span></h2>
                 <p class="hero-description">
-                    Results-driven Computer Science graduate with expertise in DevOps, software engineering, and machine
-                    learning.
-                    Passionate about automation, infrastructure optimization, and building scalable production systems.
+                    Dedicated Backend Engineer with a focus on building scalable server-side systems,
+                    architecting robust APIs, and optimizing database performance.
+                    Passionate about clean architecture, high-availability infrastructure, and solving complex back-end
+                    challenges.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="res/Abdelrahman_Ahmed_Resume.pdf" download class="btn btn-accent">Download Resume</a>
+                    <a href="res/Abdelrahman_Ahmed_Resume.pdf" target="_blank" class="btn btn-accent">View Resume</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -55,40 +65,70 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about reveal reveal-up">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
+            <div class="about-grid">
+                <div class="about-text-content">
                     <p class="about-paragraph">
-                        I'm a Computer Science graduate from Nile University with a strong foundation in DevOps
-                        practices,
-                        software engineering, and machine learning. Currently working as a Teaching Assistant at the
-                        German
-                        University in Cairo, where I support programming and software engineering courses.
+                        I'm a Computer Science graduate from Nile University specializing in
+                        Backend Engineering. Currently working as a Teaching Assistant at the
+                        German University in Cairo, I bridge the gap between complex server-side concepts and
+                        production-ready applications.
                     </p>
                     <p class="about-paragraph">
-                        My expertise spans containerization, CI/CD pipelines, cloud orchestration, and full-stack
-                        development.
-                        I'm passionate about creating efficient, scalable solutions and continuously learning new
-                        technologies.
+                        My expertise lies in designing scalable microservices, optimizing server performance, and
+                        maintaining robust backend infrastructure. I thrive on building the invisible engines
+                        that power modern, data-intensive applications.
                     </p>
-                    <div class="about-info">
-                        <div class="info-item">
-                            <span class="info-label">Location:</span>
-                            <span class="info-value">Giza, Egypt</span>
+                    <div class="highlights-grid">
+                        <div class="highlight-item">
+                            <i class="fas fa-server"></i>
+                            <span>Server-Side Logic</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">Education:</span>
-                            <span class="info-value">B.Sc. IT & Computer Science</span>
+                        <div class="highlight-item">
+                            <i class="fas fa-database"></i>
+                            <span>Database Design</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">GPA:</span>
-                            <span class="info-value">3.66/4.0</span>
+                        <div class="highlight-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>API Development</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-label">Military Status:</span>
-                            <span class="info-value">Completed</span>
+                        <div class="highlight-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Performance Optimization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-details-card">
+                    <div class="details-info">
+                        <div class="info-item-new">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label-new">Location</span>
+                                <span class="info-value-new">Giza, Egypt</span>
+                            </div>
+                        </div>
+                        <div class="info-item-new">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label-new">Education</span>
+                                <span class="info-value-new">B.Sc. in Computer Science</span>
+                            </div>
+                        </div>
+                        <div class="info-item-new">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <span class="info-label-new">GPA</span>
+                                <span class="info-value-new">3.69 / 4.0</span>
+                            </div>
+                        </div>
+                        <div class="info-item-new">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <span class="info-label-new">Military Status</span>
+                                <span class="info-value-new">Exempted</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -96,8 +136,52 @@
         </div>
     </section>
 
+    <!-- Resume Snapshot Section -->
+    <section id="resume-snapshot" class="resume-snapshot reveal reveal-up">
+        <div class="container">
+            <h2 class="section-title">Resume Snapshot</h2>
+            <div class="snapshot-grid">
+                <!-- Core Competencies -->
+                <div class="snapshot-card">
+                    <h3><i class="fas fa-list-check"></i> Core Competencies</h3>
+                    <div class="competency-tags">
+                        <span class="c-tag">Scalable APIs</span>
+                        <span class="c-tag">Microservices</span>
+                        <span class="c-tag">System Design</span>
+                        <span class="c-tag">Cloud Infrastructure</span>
+                        <span class="c-tag">Data Engineering</span>
+                        <span class="c-tag">CI/CD Mastery</span>
+                    </div>
+                </div>
+
+                <!-- Career Highlights -->
+                <div class="snapshot-card">
+                    <h3><i class="fas fa-trophy"></i> Career Highlights</h3>
+                    <ul class="highlight-list">
+                        <li><strong>TA @ GUC:</strong> Mentoring 200+ students in Advanced Programming & Software
+                            Engineering.</li>
+                        <li><strong>Grad Project:</strong> Developed YOLOv8-based vision system with 95% accuracy for
+                            visually impaired.</li>
+                        <li><strong>Backend Focus:</strong> Optimized server-side logic for high-performance code
+                            transpilers.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Resume Toggle -->
+            <div class="resume-preview-container">
+                <button id="toggleResume" class="btn btn-secondary">
+                    <i class="fas fa-file-pdf"></i> Preview Full Resume
+                </button>
+                <div id="resumeViewer" class="resume-viewer">
+                    <iframe src="res/Abdelrahman_Ahmed_Resume.pdf" width="100%" height="600px"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills reveal reveal-up">
         <div class="container">
             <h2 class="section-title">Technical Expertise</h2>
             <div class="skills-grid">
@@ -128,6 +212,7 @@
                         <li>JavaScript</li>
                         <li>PHP</li>
                         <li>Bash</li>
+                        <li>Lua</li>
                     </ul>
                 </div>
 
@@ -151,6 +236,7 @@
                     <h3 class="skill-name">Machine Learning</h3>
                     <ul class="skill-list">
                         <li>Deep Learning</li>
+                        <li>Reinforcement Learning</li>
                         <li>TensorFlow Lite</li>
                         <li>Computer Vision</li>
                         <li>OpenCV</li>
@@ -159,11 +245,27 @@
 
                 <div class="skill-card">
                     <div class="skill-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="skill-name">Data Analysis</h3>
+                    <ul class="skill-list">
+                        <li>Pandas & NumPy</li>
+                        <li>Data Visualization</li>
+                        <li>Statistical Modeling</li>
+                        <li>Data Cleaning & ETL</li>
+                        <li>SQL & NoSQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
                         <i class="fas fa-database"></i>
                     </div>
-                    <h3 class="skill-name">Database</h3>
+                    <h3 class="skill-name">Infrastructure</h3>
                     <ul class="skill-list">
                         <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>Redis</li>
                     </ul>
                 </div>
 
@@ -175,6 +277,22 @@
                     <ul class="skill-list">
                         <li>Android Studio</li>
                         <li>ImGUI</li>
+                        <li>Roblox Studio</li>
+                        <li>MTA:SA Server</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="skill-name">Professional & Productivity</h3>
+                    <ul class="skill-list">
+                        <li>Microsoft Office 365 (Excel, PPT, Word)</li>
+                        <li>Technical Teaching & Mentoring</li>
+                        <li>Technical Writing & Documentation</li>
+                        <li>Agile (Scrum / Kanban)</li>
+                        <li>Collaboration (Slack, Teams, Zoom)</li>
                     </ul>
                 </div>
             </div>
@@ -182,7 +300,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section id="experience" class="experience reveal reveal-up">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
             <div class="timeline">
@@ -211,6 +329,25 @@
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <div class="timeline-text">
+                                <span class="timeline-date">Present</span>
+                                <h3 class="timeline-title">Roblox Scripter</h3>
+                                <h4 class="timeline-company">Freelance</h4>
+                                <p class="timeline-location">Remote</p>
+                                <ul class="timeline-description">
+                                    <li>Developing game scripts and mechanics using Lua</li>
+                                    <li>Creating immersive gameplay experiences and interactive systems</li>
+                                </ul>
+                            </div>
+                            <img src="res/Roblox.png" alt="Roblox Logo" class="timeline-logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-text">
                                 <span class="timeline-date">Oct 2020 – Feb 2021</span>
                                 <h3 class="timeline-title">Junior Teaching Assistant</h3>
                                 <h4 class="timeline-company">Nile University</h4>
@@ -227,110 +364,271 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-text">
+                                <span class="timeline-date">2016</span>
+                                <h3 class="timeline-title">Server Owner & Developer</h3>
+                                <h4 class="timeline-company">MTA:SA (Multi Theft Auto)</h4>
+                                <p class="timeline-location">Online</p>
+                                <ul class="timeline-description">
+                                    <li>Managed and developed a gaming server with custom game modes</li>
+                                    <li>Scripted unique gameplay features and systems using Lua</li>
+                                </ul>
+                            </div>
+                            <img src="res/MTA.png" alt="MTA Logo" class="timeline-logo">
+                        </div>
+                    </div>
+                </div>
             </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects reveal reveal-up">
         <div class="container">
-            <h2 class="section-title">Key Projects</h2>
+            <h2 class="section-title">Featured Projects</h2>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="ml">ML & AI</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">DevOps Web Deployment Pipeline</h3>
-                        <span class="project-date">November 2025</span>
+                <!-- Assist Me -->
+                <a href="https://github.com/Abdelrahman730/ASSIST-ME" target="_blank" class="project-card"
+                    data-category="ml">
+                    <div class="project-image-container">
+                        <img src="res/proejcts/assist_me.jpg" alt="Assist Me Project" class="project-image">
+                        <div class="project-overlay">
+                            <i class="fab fa-github"></i>
+                        </div>
                     </div>
-                    <p class="project-type">Practice Project</p>
-                    <p class="project-description">
-                        Containerized a simple web application using Docker and deployed it on Kubernetes cluster.
-                        Implemented CI/CD pipeline with Jenkins for automated testing and deployment.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Docker</span>
-                        <span class="tag">Kubernetes</span>
-                        <span class="tag">Jenkins</span>
-                        <span class="tag">CI/CD</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">ASSIST ME</h3>
+                            <span class="project-date">June 2023</span>
+                        </div>
+                        <p class="project-type">Graduation Project – Computer Vision & Deep Learning</p>
+                        <p class="project-description">
+                            Mobile application for visually impaired individuals with reading and navigation modules
+                            using
+                            OCR and YOLOv8 object detection. Achieved 95% text recognition accuracy with TensorFlow Lite
+                            models.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">TensorFlow Lite</span>
+                            <span class="tag">YOLOv8</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <h3 class="project-title">ASSIST ME</h3>
-                        <span class="project-date">June 2023</span>
+                <!-- Compiler Project -->
+                <a href="https://github.com/Abdelrahman730/Compiler-Project" target="_blank" class="project-card"
+                    data-category="backend">
+                    <div class="project-image-container">
+                        <img src="res/proejcts/compiler.jpg" alt="Parse Tree Visualizer" class="project-image">
+                        <div class="project-overlay">
+                            <i class="fab fa-github"></i>
+                        </div>
                     </div>
-                    <p class="project-type">Graduation Project – Computer Vision & Deep Learning</p>
-                    <p class="project-description">
-                        Mobile application for visually impaired individuals with reading and navigation modules using
-                        OCR
-                        and YOLOv8 object detection. Achieved 95% text recognition accuracy with TensorFlow Lite models.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">TensorFlow Lite</span>
-                        <span class="tag">YOLOv8</span>
-                        <span class="tag">OCR</span>
-                        <span class="tag">Computer Vision</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Interactive Parse Tree Visualizer</h3>
+                            <span class="project-date">June 2023</span>
+                        </div>
+                        <p class="project-type">C++ & Vulkan Application</p>
+                        <p class="project-description">
+                            A high-performance interactive tool that visualizes code compilation. Features real-time
+                            tokenization,
+                            AST generation, and a beautiful node-based graph editor using Dear ImGui and Vulkan.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Vulkan</span>
+                            <span class="tag">ImGui</span>
+                            <span class="tag">Compiler Design</span>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Regex-to-Finite-Automaton Converter</h3>
-                        <span class="project-date">June 2022</span>
+                <!-- Swift to Kotlin Converter -->
+                <a href="https://github.com/Abdelrahman730/SwiftToKotlinConverter" target="_blank" class="project-card"
+                    data-category="backend">
+                    <div class="project-image-container">
+                        <img src="res/proejcts/swift_to_kotlin.png" alt="Swift to Kotlin Converter"
+                            class="project-image">
+                        <div class="project-overlay">
+                            <i class="fab fa-github"></i>
+                        </div>
                     </div>
-                    <p class="project-type">C++ Application with ImGUI</p>
-                    <p class="project-description">
-                        Developed a tool to convert regular expressions to finite automata with interactive
-                        visualizations
-                        and state transition animations.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">C++</span>
-                        <span class="tag">ImGUI</span>
-                        <span class="tag">Algorithms</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Swift to Kotlin Converter</h3>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <p class="project-type">Code Migration Tool</p>
+                        <p class="project-description">
+                            Automated tool to transpile Swift codebases to Kotlin, facilitating cross-platform mobile
+                            development
+                            and code migration.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Swift</span>
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Compiler</span>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Restaurant Management System</h3>
-                        <span class="project-date">June 2022</span>
+                <!-- Pong Bot (RL) -->
+                <a href="https://github.com/Abdelrahman730/Bot-learns-to-play-Pong-using-deep-neural-networks."
+                    target="_blank" class="project-card" data-category="ml">
+                    <div class="project-image-container">
+                        <img src="res/proejcts/pong.gif" alt="Pong Bot AI" class="project-image">
+                        <div class="project-overlay">
+                            <i class="fab fa-github"></i>
+                        </div>
                     </div>
-                    <p class="project-type">Full-Stack Web App</p>
-                    <p class="project-description">
-                        Built order and inventory management system with analytical dashboards and role-based access
-                        control.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">React.js</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MySQL</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Deep Learning Pong Bot</h3>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <p class="project-type">Reinforcement Learning</p>
+                        <p class="project-description">
+                            An AI agent trained to master the game of Pong using Deep Neural Networks and Reinforcement
+                            Learning techniques.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">PyTorch/TF</span>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Automated University Management System</h3>
-                        <span class="project-date">January 2022</span>
+                <!-- HOG Face Detection -->
+                <a href="https://github.com/Abdelrahman730/HOG-Landmark-Face-Detection" target="_blank"
+                    class="project-card" data-category="ml">
+                    <div class="project-image-container">
+                        <img src="res/proejcts/hog.png" alt="Face Detection" class="project-image">
+                        <div class="project-overlay">
+                            <i class="fab fa-github"></i>
+                        </div>
                     </div>
-                    <p class="project-type">Web Application</p>
-                    <p class="project-description">
-                        Created full-featured academic portal for students, faculty, and admins with role-based
-                        authentication.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">PHP</span>
-                        <span class="tag">MySQL</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">HOG Face Detection</h3>
+                            <span class="project-date">2023</span>
+                        </div>
+                        <p class="project-type">Computer Vision</p>
+                        <p class="project-description">
+                            Face detection system implementing Histogram of Oriented Gradients (HOG) and facial landmark
+                            estimation.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">HOG</span>
+                        </div>
                     </div>
-                </div>
+                </a>
+
+                <!-- Tremento Website -->
+                <a href="https://github.com/Abdelrahman730/Tremento_Website" target="_blank" class="project-card"
+                    data-category="web">
+                    <div class="project-image-container">
+                        <img src="res/proejcts/tremento.jpg" alt="Tremento Website" class="project-image">
+                        <div class="project-overlay">
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Tremento Website</h3>
+                            <span class="project-date">2022</span>
+                        </div>
+                        <p class="project-type">E-Commerce / Brand Site</p>
+                        <p class="project-description">
+                            A modern, responsive website tailored for Tremento, featuring dynamic layouts and a polished
+                            user interface.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Frontend</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Regex to FA -->
+                <a href="https://github.com/Abdelrahman730/Regex-to-Finite-Automaton-Covnverter" target="_blank"
+                    class="project-card" data-category="backend">
+                    <div class="project-image-container">
+                        <img src="res/proejcts/regex.png" alt="Regex to FA Converter" class="project-image">
+                        <div class="project-overlay">
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Regex to FA Converter</h3>
+                            <span class="project-date">June 2022</span>
+                        </div>
+                        <p class="project-type">C++ Application with ImGUI</p>
+                        <p class="project-description">
+                            Tool to convert regular expressions to finite automata (NFA/DFA) with interactive
+                            visualizations
+                            and state transition animations.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">ImGUI</span>
+                            <span class="tag">Automata Theory</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Automated University Management System -->
+                <a href="https://github.com/Abdelrahman730/Automated-University-Management-System" target="_blank"
+                    class="project-card" data-category="backend web">
+                    <div class="project-image-container">
+                        <img src="res/proejcts/automated_university.jpg" alt="University Management System"
+                            class="project-image">
+                        <div class="project-overlay">
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">University Management System</h3>
+                            <span class="project-date">January 2022</span>
+                        </div>
+                        <p class="project-type">Web Application</p>
+                        <p class="project-description">
+                            Full-featured academic portal for students, faculty, and admins. Handles course
+                            registration, grading,
+                            and attendance with role-based authentication.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
+    <section id="certifications" class="certifications reveal reveal-up">
         <div class="container">
             <h2 class="section-title">Professional Certifications</h2>
             <div class="certifications-grid">
@@ -381,13 +679,14 @@
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
-                <div class="contact-info-section">
+                <div class="contact-info-section reveal reveal-up"
+                    style="max-width: 800px; margin: 0 auto; text-align: center;">
                     <p class="contact-description">
                         I'm always open to discussing new opportunities, collaborations, or just having a chat about
                         technology.
-                        Feel free to reach out!
+                        Feel free to reach out via any of the channels below!
                     </p>
-                    <div class="contact-details">
+                    <div class="contact-details" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
@@ -453,6 +752,38 @@
             </div>
         </div>
     </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" id="modalImg" alt="Project Image">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle">Project Title</h2>
+                    <p id="modalType" class="modal-type">Project Category</p>
+                    <div class="modal-description" id="modalDesc">
+                        <!-- Project description goes here -->
+                    </div>
+                    <div class="modal-tech" id="modalTech">
+                        <!-- Tech stack tags -->
+                    </div>
+                    <div class="modal-buttons">
+                        <a href="#" id="modalGithub" target="_blank" class="btn btn-primary">
+                            <i class="fab fa-github"></i> View GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
