@@ -115,7 +115,7 @@ class Typewriter {
 document.addEventListener('DOMContentLoaded', () => {
     const typewriterEl = document.getElementById('typewriter');
     if (typewriterEl) {
-        const words = ['Backend Engineer', 'API Developer', 'System Specialist'];
+        const words = ['Backend Engineer', 'Data Analyst', 'DevOps Enthusiast'];
         new Typewriter(typewriterEl, words);
     }
 });
