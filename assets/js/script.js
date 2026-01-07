@@ -309,3 +309,46 @@ document.querySelectorAll('a, button').forEach(el => {
     el.addEventListener('mouseenter', () => cursor.classList.add('expand'));
     el.addEventListener('mouseleave', () => cursor.classList.remove('expand'));
 });
+
+// 3D Tilt Effect for Project Cards
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = (y - centerY) / 20;
+        const rotateY = (centerX - x) / 20;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+    });
+});
+
+// Magnetic Button Effect
+document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+    });
+
+    btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translate(0, 0)';
+    });
+});
+
+// Glowing pulse effect on scroll progress bar
+setInterval(() => {
+    const progress = document.querySelector('.reading-progress');
+    if (progress) {
+        progress.style.boxShadow = `0 0 ${10 + Math.sin(Date.now() / 500) * 5}px rgba(0, 212, 255, ${0.5 + Math.sin(Date.now() / 500) * 0.2})`;
+    }
+}, 50);
